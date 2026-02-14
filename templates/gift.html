@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gift to You ❤️</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="sparkles-background"></div>
+
+    <div class="container gift-container">
+        <h1 class="romantic-title">My Beautiful Valentine,</h1>
+
+        <div class="love-message">
+            <p>You are the most precious gift in my life. Every moment with you is magical,</p>
+            <p>every smile of yours brightens my world, and every heartbeat of mine whispers your name.</p>
+            <p>You're not just my Valentine, you're my forever 💕</p>
+        </div>
+
+        <div class="rizz-container">
+            <button id="rizzBtn" class="btn rizz-btn">Who's my sexy baby? 😘</button>
+            <div id="rizzDisplay" class="rizz-display">
+                <!-- Rizz messages will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

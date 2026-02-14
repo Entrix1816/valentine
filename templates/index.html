@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? ❤️</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="hearts-background"></div>
+
+    <div class="container">
+        <h1 class="main-question">Hey Beautiful, 💕</h1>
+        <h2 class="sub-question">Will you be my Valentine?</h2>
+
+        <div class="button-container">
+            <button id="yesBtn" class="btn yes-btn" onclick="location.href='/yes'">YES! ❤️</button>
+            <button id="noBtn" class="btn no-btn">No 😢</button>
+        </div>
+
+        <footer class="footer">
+            <p id="footerText">no is too shy right 💕</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
