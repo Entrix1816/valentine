@@ -1,10 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Us in One Place 💑</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-$END$
+    <div class="romantic-bg"></div>
+
+    <!-- Hidden audio player for automatic music -->
+    <audio id="bgMusicPlayer" style="display: none;"></audio>
+
+    <div class="container wantmore-container">
+        <h1 class="page-title">Us in One Place 💕</h1>
+
+        <div class="beautiful-line">
+            <p class="love-quote">"In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine." 💖</p>
+        </div>
+
+        <!-- Photo Carousel with Unique Messages -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic1.jpeg') }}" alt="Our memory 1" class="carousel-image">
+                        <div class="image-caption">The moment I knew you were special ✨</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic2.jpeg') }}" alt="Our memory 2" class="carousel-image">
+                        <div class="image-caption">That smile that makes my heart skip a beat 💓</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic3.jpeg') }}" alt="Our memory 3" class="carousel-image">
+                        <div class="image-caption">You + Me = Perfect Chemistry ⚡</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic4.jpeg') }}" alt="Our memory 4" class="carousel-image">
+                        <div class="image-caption">My favorite view is you looking back at me 👀</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic5.jpeg') }}" alt="Our memory 5" class="carousel-image">
+                        <div class="image-caption">This photo lives rent free in my mind 🏠</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic6.jpeg') }}" alt="Our memory 6" class="carousel-image">
+                        <div class="image-caption">My cutie pie with the sweetest eyes 🥧</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic7.jpeg') }}" alt="Our memory 7" class="carousel-image">
+                        <div class="image-caption">Perfect in every single way - no edits needed 💯</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic8.jpeg') }}" alt="Our memory 8" class="carousel-image">
+                        <div class="image-caption">Damn you so sexy it should be illegal 🔥</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic9.jpeg') }}" alt="Our memory 9" class="carousel-image">
+                        <div class="image-caption">My hubby nipples *evil lovey laugh* 😈💕</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic10.jpeg') }}" alt="Our memory 10" class="carousel-image">
+                        <div class="image-caption">This is the face I want to wake up to forever 🌅</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic11.jpeg') }}" alt="Our memory 11" class="carousel-image">
+                        <div class="image-caption">If I could frame any moment, it would be this one 🖼️</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic12.jpeg') }}" alt="Our memory 12" class="carousel-image">
+                        <div class="image-caption">You're the reason I believe in love at second glance 💘</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic13.jpeg') }}" alt="Our memory 13" class="carousel-image">
+                        <div class="image-caption">My favorite distraction from everything 📱</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic14.jpeg') }}" alt="Our memory 14" class="carousel-image">
+                        <div class="image-caption">This picture = pure serotonin boost 🧠</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic15.jpeg') }}" alt="Our memory 15" class="carousel-image">
+                        <div class="image-caption">God really took his time making you 🎨</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic16.jpeg') }}" alt="Our memory 16" class="carousel-image">
+                        <div class="image-caption">If beauty was a crime, you'd be serving life ⚖️</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic17.jpeg') }}" alt="Our memory 17" class="carousel-image">
+                        <div class="image-caption">My personal brand of sunshine ☀️</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic18.jpeg') }}" alt="Our memory 18" class="carousel-image">
+                        <div class="image-caption">You make ordinary moments feel like movies 🎬</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic20.jpeg') }}" alt="Our memory 20" class="carousel-image">
+                        <div class="image-caption">I'd choose you in every universe 🌌</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic21.jpeg') }}" alt="Our memory 21" class="carousel-image">
+                        <div class="image-caption">My main character 🎮</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic22.jpeg') }}" alt="Our memory 22" class="carousel-image">
+                        <div class="image-caption">You're the "hell yes" in every question 💯</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic23.jpeg') }}" alt="Our memory 23" class="carousel-image">
+                        <div class="image-caption">If I had a flower for every time I thought of you, I'd have a garden 🌸</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic24.jpeg') }}" alt="Our memory 24" class="carousel-image">
+                        <div class="image-caption">My favorite notification is your name popping up 📱</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic25.jpeg') }}" alt="Our memory 25" class="carousel-image">
+                        <div class="image-caption">You're the plot twist I never saw coming but so glad happened 📖</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="{{ url_for('static', filename='images/pic26.jpeg') }}" alt="Our memory 26" class="carousel-image">
+                        <div class="image-caption">This is us, this is love, this is everything 💕</div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev-btn">←</button>
+                <button class="carousel-btn next-btn">→</button>
+            </div>
+
+            <div class="carousel-dots"></div>
+        </div>
+
+        <div class="forever-message">
+            <p class="forever-text">i'll always be your forever, for the good and bad times 🤍</p>
+        </div>
+
+        <div class="miss-me-container">
+            <button id="missMeBtn" class="btn miss-me-btn">miss me - just click 💕</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

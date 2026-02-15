@@ -9,6 +9,9 @@
 <body>
     <div class="sparkles-background"></div>
 
+    <!-- Hidden audio player - no controls visible -->
+    <audio id="bgMusicPlayer" style="display: none;"></audio>
+
     <div class="container gift-container">
         <h1 class="romantic-title">My Beautiful Valentine,</h1>
 
@@ -20,8 +23,9 @@
 
         <div class="rizz-container">
             <button id="rizzBtn" class="btn rizz-btn">Who's my sexy baby? 😘</button>
-            <div id="rizzDisplay" class="rizz-display">
-                <!-- Rizz messages will appear here -->
+            <div id="rizzDisplay" class="rizz-display"></div>
+            <div id="wantMoreContainer" class="want-more-container" style="display: none;">
+                <button id="wantMoreBtn" class="btn want-more-btn">Want more? 💕</button>
             </div>
         </div>
     </div>

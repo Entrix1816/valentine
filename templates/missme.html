@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Me? 💕</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-$END$
+    <div class="heartbeat-bg"></div>
+
+    <!-- Hidden audio player for automatic Selena Gomez -->
+    <audio id="bgMusicPlayer" style="display: none;"></audio>
+
+    <div class="container missme-container">
+        <h1 class="missme-title">Thinking of You 💭</h1>
+
+        <div class="photo-frame">
+            <!-- YOUR PHOTO HERE -->
+            <img src="{{ url_for('static', filename='images/myphoto.jpeg') }}" alt="It's me!" class="my-photo">
+            <div class="photo-glare"></div>
+        </div>
+
+        <div class="message-bubble">
+            <p class="missme-message">Every moment without you feels like a lifetime... Can't wait to hear your voice! 💕</p>
+        </div>
+
+        <div class="contact-buttons">
+            <a href="tel:+2348112835788" class="contact-btn call-btn">
+                <span class="btn-icon">📞</span>
+                <span class="btn-text">Call Me</span>
+            </a>
+            <a href="https://wa.me/2348112835788" target="_blank" class="contact-btn whatsapp-btn">
+                <span class="btn-icon">💬</span>
+                <span class="btn-text">WhatsApp</span>
+            </a>
+        </div>
+
+        <div class="love-note">
+            <p>Distance means so little when someone means so much 💕</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
