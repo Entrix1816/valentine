@@ -5,7 +5,7 @@ import os
 import mimetypes
 
 app = Flask(__name__)
-app.secret_key = 'your-secret-key-here'
+app.secret_key = 'c4975be5bfbb880d03ff70e398f1b0f959bd4246f2184da4c9a4cc79804572c2'
 
 #Fix MIME types for audio files
 mimetypes.add_type('audio/mpeg', '.mp3')
